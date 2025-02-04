@@ -160,7 +160,10 @@ document.addEventListener('wheel', function(event) {
 const kbovideo = document.querySelector(".kbo-video");
 const comingsoon = document.querySelectorAll(".comingsoon"); 
 const comingsoonVideos = document.querySelectorAll(".comingsoon-video"); 
-
+const kimhae = document.querySelector('.kimhae')
+const kimhaevideo = document.querySelector('.kimhae-video')
+const shoppe = document.querySelector('.shoppe')
+const shoppevideo = document.querySelector('.shoppe-video')
 
 kbo.forEach(video => {
   video.addEventListener("mouseenter", function () {
@@ -191,5 +194,27 @@ comingsoon.forEach((coming, index) => {
     }
   });
 });
+kimhae.addEventListener('mouseenter', function() {
+  kimhaevideo.style.display = 'block';  
+  kimhaevideo.play();
 });
+
+kimhae.addEventListener('mouseleave', function() {
+  kimhaevideo.style.display = 'none';  
+  kimhaevideo.pause();
+  kimhaevideo.currentTime = 0;
+});
+shoppe.addEventListener('mouseenter', function() {
+  shoppevideo.style.display = 'block';  
+  shoppevideo.play();
+});
+
+shoppe.addEventListener('mouseleave', function() {
+  shoppevideo.style.display = 'none';  
+  shoppevideo.pause();
+  shoppevideo.currentTime = 0;
+});
+});
+
+
 

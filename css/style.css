@@ -522,6 +522,26 @@ height: 50px;
   display: none; 
   z-index: -2;
 }
+.kimhae-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; 
+  z-index: -2;
+}
+.shoppe-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; 
+  z-index: -2;
+}
 .about{
   position: relative;
   z-index: 9999;
@@ -956,6 +976,9 @@ height: 50px;
 .tmdb:hover::after{
   color: #ffffff;
 }
+.tmdb > .btns > .web{
+  padding: 20px 0;
+}
 
 .homecheck{
   margin-left: 150px;
@@ -1008,8 +1031,8 @@ height: 50px;
   cursor: pointer;
 }
 .class101 .sticker{
-  background-color: rgb(15, 23, 42);
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   position: absolute;
   top: 28%;
   left: 29%;
@@ -1020,6 +1043,7 @@ height: 50px;
 }
 .class101 .sticker img{
   margin-top: 10px;
+  width: 100px;
 }
 .class101 .sticker h2{
   margin-top: 20px;
@@ -1311,6 +1335,9 @@ text-align: center;
 .shoppe-right .color .color3{
   color: #B19F77;
 }
+.shoppe > .btns > .web{
+  padding: 20px 0;
+}
 .swiper-slide .tmdb-left{
   flex: 0.5;
   margin-left: 100px;
@@ -1351,6 +1378,7 @@ text-align: center;
 .tmdb-right .color .color3{
   color: #ffffff;
 }
+
 .swiper-button-next , .swiper-button-prev{
   color: #ffffff;
 }
